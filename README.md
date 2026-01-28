@@ -8,9 +8,9 @@ This portfolio replaces the traditional static scroll with a dynamic **3D fly-th
 
 ## ✨ Features
 
-- ** immersive 3D Environment**: A fully realized underwater scene with ambient lighting, "plankton" particles, and an environment map.
+- **Immersive 3D Environment**: A fully realized underwater scene with ambient lighting, "plankton" particles, and an environment map.
 - **Scroll-Driven Navigation**: The camera follows a meticulously defined `CatmullRomCurve3` path, synchronized perfectly with the user's scroll position.
-- **Realistic Materials**: Uses physically based rendering (PBR) for `meshPhysicalMaterial` to create realistic, refractive air bubbles (simulating water/glass transmission).
+- **Realistic Materials**: Uses physically based rendering (PBR) for `MeshPhysicalMaterial` to create realistic, refractive air bubbles (simulating water/glass transmission).
 - **Interactive Elements**: Floating assets that gently animate and respond to the environment.
 - **Responsive HTML Overlays**: Content is projected into the 3D scene using `Scroll` controls, ensuring text is readable and accessible.
 
@@ -36,7 +36,7 @@ This portfolio replaces the traditional static scroll with a dynamic **3D fly-th
 1.  **Clone the repository**
     ```bash
     git clone https://github.com/your-username/portfolio-2.0.git
-    cd PORTFOLIO 2.0
+    cd portfolio-2.0
     ```
 
 2.  **Install dependencies**
