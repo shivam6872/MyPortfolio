@@ -102,7 +102,7 @@ export default function Experience() {
                     {/* SECTION 1: INTRO (Top of page) */}
                     <div style={{ position: 'absolute', top: '15vh', left: '10vw' }}>
                         <img src="/logo.png" alt="Logo" style={{
-                            width: '100px', height: '5rem', marginLeft: 'absolute', marginTop: '-6rem', marginBottom: '8rem', borderRadius: '50%'
+                            width: '100px', height: 'auto', marginLeft: '4rem', marginTop: '-6rem', marginBottom: '8rem'
                         }} />
                         <h1 style={{ color: '#00d4ff', fontSize: '4rem', fontWeight: 'bold', marginLeft: '4rem' }}>
                             Hi, I'm
