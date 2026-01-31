@@ -12,4 +12,93 @@ body,
     background-color: #000;
     overflow: hidden;
     /* Important to stop double scrollbars */
+    scroll-behavior: smooth;
+}
+
+/* Navigation Bar Styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    padding: 30px 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 1000;
+    pointer-events: none;
+    /* Allow clicking through empty space */
+}
+
+.nav-list {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    pointer-events: auto;
+    /* Re-enable pointer events for links */
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #b0bec5;
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: 'Courier New', Courier, monospace;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.nav-link:hover {
+    color: #00d4ff;
+}
+
+/* Logo Styles */
+.logo {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 80px;
+    height: auto;
+    z-index: 1000;
+}
+
+/* Mobile/Tablet Responsiveness */
+@media (max-width: 1024px) {
+    .navbar {
+        padding: 20px 30px;
+        justify-content: center;
+        background: transparent;
+        /* Remove dark background */
+        backdrop-filter: none;
+    }
+
+    .logo {
+        width: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px;
+        flex-direction: column;
+        background: transparent;
+        /* Remove dark background */
+        top: 10px;
+        /* Adjust positioning */
+    }
+
+    .nav-list {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+        background: rgba(255, 255, 255, 0.1);
+        /* Subtle pill shape instead of full bar */
+        padding: 10px 20px;
+        border-radius: 30px;
+        backdrop-filter: blur(5px);
+    }
+
+    .nav-link {
+        font-size: 0.9rem;
+    }
 }
